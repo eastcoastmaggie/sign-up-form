@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="sign-up.js" defer></script>
+</head>
+<body>
+    <div id="side-panel">
+        <h1 class="logo"><img src="img/odin-lined.png" class="logo-img"> ODIN</h1>
+    </div>
+    <div id="content">
+        <div class="top">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to. </p>
+        </div>
+
+        <form action="" method="get" class="sign-in-form">
+            <div class="form-container">
+                <h2>Let's do this!</h2>
+                <div class="form-item">
+                    <label for="first-name">FIRST NAME</label>
+                    <input id="first-name" name="first-name" type="text"> 
+                </div>
+                <div class="form-item">
+                    <label for="last-name">LAST NAME</label>    
+                    <input id="last-name" name="last-name" type="text">
+                </div>
+                <div class="form-item">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email"> 
+                </div>
+                <div class="form-item">
+                    <label for="phone-number">PHONE NUMBER</label>    
+                    <input id="phone-number" name="phone-number" type="text" pattern="1?-? ?\(?[0-9]{3}\)? ?-?[0-9]{3}-[0-9]{4}" placeholder="(555) 555-5555">
+                </div>
+                <div class="form-item">
+                    <label for="password">PASSWORD</label>
+                    <input id="password" name="password" type="password"> 
+                    <span id="validation-message">*Passwords do not match</span>
+                </div>
+                <div class="form-item">
+                    <label for="password-confirm">CONFIRM PASSWORD</label>    
+                    <input id="password-confirm" name="password-confirm" type="password">
+                </div>
+                
+            </div>
+        </form>
+        <div class="sign-up-button">
+            <button class="btn">Create Account</button>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+        </div>
+
+    </div>
+
+</body>
+</html>
